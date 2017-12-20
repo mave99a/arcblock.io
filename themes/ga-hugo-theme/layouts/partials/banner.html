@@ -1,16 +1,19 @@
+
+
 <div class="container">
     <div class="row">
+    {{range where .Site.Pages "Title" "=" "BannerTopSection"}} 
         <div class="col-xs-12 col-sm-12 col-md-6">
-            <div class="amount-raised-con"> <strong>Amount raised so far:</strong>
-                <div class="amount-raised-inner col-xs-12"> 84,146 ETH <span>(equivalent value)</span> </div>
-                <samp>Spreads out one base charge</samp> </div>
+            <div class="amount-raised-con"> 
+                
+                    {{ .Content }}
+                 </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 banner-right-con"> <strong>the Decentralization</strong>
-            <h1>Token Sale <br> has already<br> concluded
-            </h1>
-            <samp>MultiChain organizations</samp>
-            <div class="banner-right-buttons"> <a class="btn-1" href="javascript:;">Start Exploring</a> <a href="javascript:;"><span class="glyphicon glyphicon-play"></span> watch our video</a> </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 banner-right-con"> 
+            {{ .Params.Sidehtml  | markdownify}}
         </div>
+
+        {{ end }}
         <div class="col-xs-12 banner-bottom-con">
             <div class="col-xs-12 col-sm-4 col-md-4 platform-advantages-outer-con">
                 <div class="platform-advantages-con"> <img src="images/platform-advantages-img-one.png" alt="" /> <strong>Why do we use it?</strong>

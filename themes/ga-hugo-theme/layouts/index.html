@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ArcBlock</title>
+    <link href="{{ .Site.BaseURL }}css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet" type="text/css">
+    <link href="{{ .Site.BaseURL }}css/media.css" rel="stylesheet" type="text/css">
+    <script src="{{ .Site.BaseURL }}js/jquery.min.js" type="text/javascript"></script>
+    <link href="{{ .Site.BaseURL }}css/owl.carousel.css" rel="stylesheet" type="text/css">
+    <script src="{{ .Site.BaseURL }}js/owl.carousel.js" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+
+    {{ partial "header" . }} 
+
+    <section class="banner-outer-con">
+        {{ partial "banner" . }}
+    </section>
+    <section class="what-we-do-outer">
+        {{ partial "whatwedo" . }}
+    </section>
+    <section class="arcblock-advantages-outer">
+        {{ partial "advantages" . }}
+    </section>
+    <section class="milestones-main-outer">
+        {{ partial "milestones" . }}
+    </section>
+    <section class="questions-to-understand">
+        {{ partial "questions" . }}
+    </section>
+    <section class="cyberMiles-team-outer">
+        {{ partial "cyberMiles" .}}
+    </section>
+    <section class="media-report-outer">
+            {{ partial "mediaReport" .}}
+    </section>
+    <section class="cyberMiles-partners-outer">
+            {{ partial "partners" .}}
+    </section>
+
+    {{ partial "footer" . }}
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        /*1*/
+        $(function() {
+            var header = $("header");
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 40) {
+                    header.removeClass('header').addClass("darkHeader");
+                } else {
+                    header.removeClass("darkHeader").addClass('header');
+                }
+            });
+        });
+
+        /*2*/
+        $(".what-we-do-bottom-arrow").click(function() {
+            $('html,body').animate({
+                    scrollTop: $(".arcblock-advantages-outer").offset().top
+                },
+                'slow');
+        });
+
+        /*3*/
+        $(document).ready(function() {
+            var owl = $('#owl-demo03');
+            owl.owlCarousel({
+                stagePadding: 0,
+                margin: 10,
+                nav: true,
+                loop: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    400: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    768: {
+                        items: 3
+                    },
+                    900: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 3
+                    },
+                    1300: {
+                        items: 3
+                    },
+                    1400: {
+                        items: 3
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
