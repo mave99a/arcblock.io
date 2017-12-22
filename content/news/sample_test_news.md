@@ -1,10 +1,10 @@
 ---
-title: "Sample"
-date: 2017-12-20T16:33:41+05:30
+title: "Sample News to check"
+date: 2017-12-22T0:33:41+05:30
 draft: true
-tags: ["News", "Sample News"]
+tags: ["Sample News"]
 user: "Test User"
-author: "Test User"
+author: "New User"
 img: "post-img-1.png"
 ---
 

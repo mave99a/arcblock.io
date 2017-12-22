@@ -1,11 +1,11 @@
 ---
-title: "Sample"
-date: 2017-12-20T16:33:41+05:30
+title: "Latest Test News"
+date: 2017-12-21T16:33:41+05:30
 draft: true
 tags: ["News", "Sample News"]
-user: "Test User"
 author: "Test User"
 img: "post-img-1.png"
+categories: ["Cat1", "Cat2", "Cat3"]
 ---
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula pulvinar velit, ut lobortis dolor fermentum faucibus. Proin efficitur pellentesque tortor hendrerit hendrerit. Phasellus semper id urna in elementum. Aenean semper aliquet neque. Integer at varius lorem, id volutpat neque. Nulla nec nulla in lacus vestibulum imperdiet non nec enim. Suspendisse ut porta nisl, non accumsan sapien. Aenean aliquet sit amet odio quis venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur placerat eros sit amet mauris vehicula faucibus. Fusce maximus libero mi, a cursus massa tincidunt vel.</p>
